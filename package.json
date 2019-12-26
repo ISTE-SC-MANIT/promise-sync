@@ -55,12 +55,12 @@
         "prettier": "^1.19.1"
     },
     "husky": {
-        "pre-commit": "npm run lint && npm run format"
+        "pre-commit": "npm run lint && npm run format",
+        "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     },
     "config": {
         "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog",
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+            "path": "./node_modules/cz-conventional-changelog"
         }
     }
 }
