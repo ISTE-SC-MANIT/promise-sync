@@ -1,0 +1,5 @@
+# Do not format JS as it is transpiled from TS
+*.js
+*.jsx
+*.d.ts
+node_modules
