@@ -59,7 +59,8 @@
     },
     "config": {
         "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
+            "path": "./node_modules/cz-conventional-changelog",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
     }
 }
