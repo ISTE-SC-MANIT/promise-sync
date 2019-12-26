@@ -8,5 +8,5 @@ export default {
 export const promiseSync = (): React.ReactNode => <PromiseSync />;
 
 promiseSync.story = {
-    name: "Promise Sync"
+    name: "Promise-Sync"
 };
