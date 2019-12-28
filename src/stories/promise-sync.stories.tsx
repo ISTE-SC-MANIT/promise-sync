@@ -29,7 +29,7 @@ const fetchNext = (
 export const promiseSync = (): React.ReactNode => (
     <PromiseSync
         initialCount={3}
-        error={null}
+        error={<p>Error: Invalid index for the array</p>}
         fetchNext={fetchNext}
         render={(elements, loadNext, loading): React.ReactNode => {
             return (
@@ -40,13 +40,15 @@ export const promiseSync = (): React.ReactNode => (
                             <br />
                         </React.Fragment>
                     ))}
-                    <button disabled={loading} onClick={(): void => loadNext()}>
+                    <button
+                        disabled={loading}
+                        onClick={(): void => loadNext(2)}
+                    >
                         {loading ? "Loading..." : "Next"}
                     </button>
                 </>
             );
         }}
-        alterCount={2}
     />
 );
 
