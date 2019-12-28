@@ -10,7 +10,8 @@
         "start": "start-storybook -p 9009 -s public",
         "commit": "npx git-cz",
         "lint": "eslint src/**/* --ext .tsx[x]",
-        "format": "prettier --write \"src/**/*.{tsx,ts}\""
+        "format": "prettier --write \"src/**/*.{tsx,ts}\"",
+        "build": "tsc"
     },
     "eslintConfig": {
         "extends": "react-app"
