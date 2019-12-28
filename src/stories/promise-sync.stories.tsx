@@ -28,7 +28,7 @@ const fetchNext = (
 
 export const promiseSync = (): React.ReactNode => (
     <PromiseSync
-        count={2}
+        initialCount={3}
         error={null}
         fetchNext={fetchNext}
         render={(elements, loadNext, loading): React.ReactNode => {
@@ -46,6 +46,7 @@ export const promiseSync = (): React.ReactNode => (
                 </>
             );
         }}
+        alterCount={2}
     />
 );
 
